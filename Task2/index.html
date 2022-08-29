@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel ="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table id="table1">
+          <h1 id="heading">Student Registration Form</h1>
+        <tbody>
+        <tr>
+        <th><label>Student Name:</label></th>
+        <td><input type="text" placeholder="full name" id="fname"></td>
+        </tr>
+        <tr>
+        <th><label>Username:</label></th>
+        <td><input type="text" id="un"></td>
+        </tr>
+        <tr>
+        <th><label>Password:</label></th>
+        <td><input type="password" id="pass"></td>
+        </tr>
+        <tr>
+        
+        
+        <th><label>Confirm Password:</label></th>
+        <td><input type="password" id="cpass"></td>
+        </tr>
+        <tr>
+        <th><label>Email:</label></th>
+        <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+        <th><label>Gender</label></th>
+        <td>
+        <input type="radio" name="g" id="female">Female &nbsp;&nbsp;&nbsp;
+        <input type="radio"name="g" id="male">Male &nbsp;&nbsp;&nbsp;
+        <input type="radio"name="g" id="other">Others</td>
+        </tr>
+        <tr id="btn">
+            <td colspan="3"><input type="button" onclick="add()" id="btn" name="button" value="SUBMIT"></td>
+            </tr>
+        </tbody>
+        </table>
+        </form>
+        <br>
+          <table  id="show">
+            <h1 id="head1">Displaying Student Details</h1>
+           <thead>
+            <tr><th>Student Name</th>
+              <th>User Name</th>
+              <th>Password</th>
+             <th>Email</th>     
+            </tr>
+           </thead>
+        </table>
+        <script src="script.js"></script>
+    
+</body>
+</html>
